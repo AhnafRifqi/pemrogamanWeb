@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    padding: 20px;
+}
+
+h1 {
+    color: #343a40;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto; /* Membuat form di tengah */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block; /* Membuat label berada di baris sendiri */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting agar padding tidak melebarkan input */
+    margin-top: 3px;
+}
+
+/* Styling untuk checkbox */
+input[type="checkbox"] + label {
+    font-weight: normal; /* Label untuk checkbox tidak perlu tebal */
+    display: inline;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

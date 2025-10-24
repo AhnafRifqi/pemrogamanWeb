@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulir Pendaftaran Karyawan</h1>
+    <p>Isi data di bawah ini untuk melamar.</p>
+
+    <form action="process.php" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="nama">1. Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">2. Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="posisi">3. Posisi yang Dilamar:</label>
+            <select id="posisi" name="posisi" required>
+                <option value="">-- Pilih Posisi --</option>
+                <option value="Staff Marketing">Staff Marketing</option>
+                <option value="Administrasi">Administrasi</option>
+                <option value="Technical Support">Technical Support</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>4. Keahlian Anda (Pilih beberapa):</label><br>
+            
+            <input type="checkbox" id="excel" name="keahlian[]" value="Microsoft Excel">
+            <label for="excel">Microsoft Excel</label><br>
+
+            <input type="checkbox" id="komunikasi" name="keahlian[]" value="Komunikasi">
+            <label for="komunikasi">Komunikasi</label><br>
+
+            <input type="checkbox" id="desain" name="keahlian[]" value="Desain">
+            <label for="desain">Desain Dasar</label><br>
+            
+            <input type="checkbox" id="inggris" name="keahlian[]" value="Bahasa Inggris Dasar">
+            <label for="inggris">Bahasa Inggris Dasar</label><br>
+
+            
+            <input type="checkbox" id="python" name="keahlian[]" value="Python">
+            <label for="python">Python</label><br>
+
+            <input type="checkbox" id="sql" name="keahlian[]" value="SQL Database">
+            <label for="sql">SQL Database</label>
+            </div>
+
+        <div class="form-group">
+            <label for="cv_file">5. Upload CV (PDF/DOCX):</label>
+            <input type="file" id="cv_file" name="cv_file" required>
+        </div>
+
+        <button type="submit">Kirim Pendaftaran</button>
+
+    </form>
+</body>
+</html>
